@@ -16,19 +16,21 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 32px 0;
 }
 
 h1{
     color: #fff;
     text-align: center;
     margin: 0;
-    font-size: 25px;
+    font-size: 48px;
 }
 
 /* Body */
 header, main{
     width: 95%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main{
@@ -40,17 +42,20 @@ main{
     height: 61vh;
     margin-bottom: 10px;
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    overflow: scroll;
-    gap: 10px;
 
-    div{
+    .array-container{
         color: #fff;
         background-color:  orangered;
         font-size: 12px;
         margin: 0 5px;
-        height: 30px;
-        width: 30px;
+        height: 40px;
+        min-width: 40px;
+        display: inline-flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -58,9 +63,11 @@ main{
 
 .buttons{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     row-gap: 20px;
+    padding: 2em;
     
     button{
         font-size: 1.5rem;
@@ -68,7 +75,7 @@ main{
         border: none;
         background-color: orangered;
         color: #fff;
-        width: 80%;
+        width: 25%;
         border-radius: .8em;
     }
 }

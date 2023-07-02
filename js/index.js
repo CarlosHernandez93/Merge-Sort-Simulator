@@ -1,9 +1,16 @@
 const animationZone = document.getElementById('animation-zone');
 const fragmetn = document.createDocumentFragment();
-for(let i = 0; i< 20; i++){
+
+const numMin = Math.ceil(2);
+const numMax = Math.floor(20);
+const max = Math.floor(Math.random() * (numMax - numMin + 1) + numMin);
+
+for(let i = 0; i< max; i++){
     const div = document.createElement('div');
+    div.className = 'array-container'
     const randomNumber = Math.floor(Math.random() * 200);
-    div.innerHTML = `<p>${randomNumber}</p>`
+    div.innerHTML = `${randomNumber}`
+    //div.innerHTML = `<p>${randomNumber}</p>`
     fragmetn.appendChild(div);
 }
 animationZone.appendChild(fragmetn);
